@@ -4,7 +4,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 const routes: Array<RouteRecordRaw> = [
     {
         path: "/", // 默认路由 home页面
-        component: () => import("../pages/Home/index.vue"),
+        component: () => import("@/pages/Home/index.vue"),
     },
 
 ];

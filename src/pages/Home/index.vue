@@ -1,10 +1,9 @@
 <template>
   <div :class="$style.homePage">
-
-    <a-space wrap>
-      <a-button type="primary" :class="$style.testBtn" >这里是首页</a-button>
-    </a-space>
     <div class="flex">
+      <a-button type="primary" :class="$style.testBtn" >这里是首页</a-button>
+    </div>
+    <div class="flex bg-slate-300">
       <div class="flex-none w-14 h-14">
         01
       </div>
