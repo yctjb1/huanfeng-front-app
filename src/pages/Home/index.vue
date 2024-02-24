@@ -1,6 +1,7 @@
 <template>
   <div>
-    {{message}}
+    啊啊啊？
+    {{ $t("home.title") }}
     <br/>
     <router-link to="/test">去test页</router-link>
   </div>
