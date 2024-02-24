@@ -1,8 +1,6 @@
 <template>
   <div>
-    {{message}}
-    <br/>
-    <router-link to="/test">去test页</router-link>
+    这里是404
   </div>
 </template>
 
@@ -10,13 +8,12 @@
 import { ref } from 'vue';
 
 export default {
-  name: 'HomePage',
+  name: 'NotFound',
   setup() {
-    const message = ref('Hello from Vue 3!');
 
 
     return {
-      message,
+
 
     };
   },
