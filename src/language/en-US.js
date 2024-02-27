@@ -7,6 +7,9 @@ export default {
         contact: 'Contact',
         language: 'Language'
     },
+    error: {
+      video: 'Your browser does not support the video tag.'
+    },
     home: {
         title: 'This is HomePage.'
     }

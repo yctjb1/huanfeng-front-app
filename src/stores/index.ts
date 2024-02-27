@@ -1,7 +1,8 @@
 import { defineStore } from 'pinia';
 
 import { useI18n } from "vue-i18n";
-
+import antZhCN from 'ant-design-vue/es/locale/zh_CN'
+import antEnUS from 'ant-design-vue/es/locale/en_US'
 /**
  * 基础store,供首页以及大部分场景使用
  */
@@ -42,5 +43,17 @@ export const useBaseStore = defineStore({
         getTestStr():string {
             return "" + this.test;
         },
+        getAntLocale() {
+            let antdLoacle;
+            switch (this.huanfengLocale as any){
+                case 'en-US':
+                    antdLoacle = antEnUS;console.log('antd语言替换为英文!');
+                    break;
+                case 'zh-CN':
+                default:
+                    antdLoacle = antZhCN;;console.log('antd语言替换为中文!');
+            }
+            return antdLoacle;
+        }
     },
 });

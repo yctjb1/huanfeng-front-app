@@ -8,10 +8,19 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AButton: typeof import('ant-design-vue/es')['Button']
+    ACarousel: typeof import('ant-design-vue/es')['Carousel']
+    AConfigProvider: typeof import('ant-design-vue/es')['ConfigProvider']
+    ADivider: typeof import('ant-design-vue/es')['Divider']
+    ADropdown: typeof import('ant-design-vue/es')['Dropdown']
+    AMenu: typeof import('ant-design-vue/es')['Menu']
+    AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
     ASelect: typeof import('ant-design-vue/es')['Select']
     ASelectOption: typeof import('ant-design-vue/es')['SelectOption']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    HomeTopVideoBanner: typeof import('./src/components/HomeTopVideoBanner/index.vue')['default']
     Layout: typeof import('./src/components/Layout/index.vue')['default']
+    MainLayoutFoot: typeof import('./src/components/Layout/MainLayoutFoot.vue')['default']
+    MainLayoutHead: typeof import('./src/components/Layout/MainLayoutHead.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

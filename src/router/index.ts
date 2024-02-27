@@ -1,7 +1,4 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import HomePage from "@/pages/Home/index.vue";
-import TestPage from "@/pages/Test/index.vue";
-import NotFoundPage from "@/pages/NotFound/index.vue";
 
 // 1. 配置路由
 const routes: Array<RouteRecordRaw> = [
@@ -13,17 +10,22 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: "/home", // 默认路由 home页面
         name: 'home',
-        component: () => HomePage,
+        component: () => import('@/pages/Home/index.vue'),//因为ant切换语言的缘故，需要改成动态导入组件
     },
     {
         path: "/test", // 默认路由 home页面
         name: 'test',
-        component: () => TestPage,
+        component: () => import('@/pages/Test/index.vue'),
+    },
+    {
+        path: "/about", // 默认路由 home页面
+        name: 'test',
+        component: () => import('@/pages/AboutPage/index.vue'),
     },
     {
         path: "/404", // 默认路由 home页面
         name: '404',
-        component: () => NotFoundPage,
+        component: () => import('@/pages/NotFound/index.vue'),
     },
     {
         path: "/:path(.*)", // 通配符路由，匹配任何路径

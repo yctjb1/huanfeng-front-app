@@ -7,6 +7,9 @@ export default {
         contact: '联系',
         language: '语言'
     },
+    error: {
+        video: '您的浏览器不支持video标签。'
+    },
     home: {
         title: '这里是首页.'
     }
