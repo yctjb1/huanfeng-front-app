@@ -4,20 +4,8 @@
   </div>
 </template>
 
-<script lang="ts">
-import { ref } from 'vue';
+<script lang="ts" setup>
 
-export default {
-  name: 'NotFound',
-  setup() {
-
-
-    return {
-
-
-    };
-  },
-};
 </script>
 
 <style lang="less" module>

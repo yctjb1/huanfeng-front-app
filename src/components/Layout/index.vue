@@ -1,10 +1,10 @@
 <template>
   <a-config-provider :locale="baseStore.getAntLocale">
 <!--这里是布局页面-->
-    <div :class="['flex','flex-1','flex-col',$style.mainLayoutWrap,'main-layout-wrap']">
+    <div :class="['flex','flex-col',$style.mainLayoutWrap,'main-layout-wrap']">
       <MainLayoutHead />
 
-      <div :class="[$style.mainLayoutContent,'main-layout-content']">
+      <div :class="['grow',$style.mainLayoutContent,'main-layout-content']">
         <router-view></router-view>
       </div>
       <MainLayoutFoot />
@@ -46,9 +46,7 @@ export default {
    overflow-x: hidden;
    overflow-y: auto;
    .mainLayoutContent {
-      //padding-top: 104px;
-      //padding-bottom: 304px;
-      min-height: calc(100% - 400px);
+      //min-height: calc(100% - 400px);
    }
  }
 </style>

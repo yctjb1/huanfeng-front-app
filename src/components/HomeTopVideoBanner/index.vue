@@ -24,9 +24,8 @@
     background-size: cover;
   }
   video{
-    max-width: 1920px;
-    width: 100%;
-    max-height: 720px;
+    width: 480px;
+    height: 180px;
   }
 
 }

@@ -12,7 +12,7 @@
     </template>
     <div v-for="item in 4" :key="item">
       <div class="flex justify-center items-center">
-      <img :src="getImgUrl(item - 1)" />
+      <img :src="getImgUrl(item - 1)" style="height: 280px"/>
       </div>
     </div>
   </a-carousel>

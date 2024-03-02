@@ -1,14 +1,13 @@
 <template>
   <div>
     <HomeTopVideoBanner />
-    <HomeSwap />
   </div>
 </template>
 
 <script lang="ts">
 import { ref,h } from 'vue';
 import {Modal} from 'ant-design-vue'
-import HomeSwap from './HomeSwap.vue'
+
 import HomeTopVideoBanner from '@/components/HomeTopVideoBanner/index.vue'
 export default {
   name: 'HomePage',
@@ -29,7 +28,6 @@ export default {
     };
   },
   components: {
-    HomeSwap,
     HomeTopVideoBanner
   }
 };

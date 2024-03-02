@@ -13,17 +13,22 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/pages/Home/index.vue'),//因为ant切换语言的缘故，需要改成动态导入组件
     },
     {
-        path: "/test", // 默认路由 home页面
-        name: 'test',
+        path: "/test",
+        name: 'testPage',
         component: () => import('@/pages/Test/index.vue'),
     },
     {
-        path: "/about", // 默认路由 home页面
-        name: 'test',
+        path: "/about",
+        name: 'aboutPage',
         component: () => import('@/pages/AboutPage/index.vue'),
     },
     {
-        path: "/404", // 默认路由 home页面
+        path: "/service",
+        name: 'servicePage',
+        component: () => import('@/pages/ServicePage/index.vue'),
+    },
+    {
+        path: "/404",
         name: '404',
         component: () => import('@/pages/NotFound/index.vue'),
     },
